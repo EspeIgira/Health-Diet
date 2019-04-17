@@ -7,21 +7,56 @@
   background-repeat: no-repeat;
   background-size:cover;
   background-origin: content-box;
-  margin-left:700px;
-  margin-right:700px;
+  margin-left:300px;
+  margin-right:300px;
   
 }
 .style{
+  /* background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQla-54-kEmOayBzx0PPiTWBbvaNz9Ir14h1WZ_0iazDGHTOZv0"); */
+  /* background-repeat: no-repeat; */
+  background-size:cover;
+  background-origin: content-box; 
+  color:lightgoldenrodyellow; 
+  border: 2px solid goldenrod; 
+  border-style: double;
+  border-radius:5%; 
+  float:left;
+  padding:20px;
+ 
+}
+.images{
+  background-color:black;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-origin: content-box;
+  color:lightgoldenrodyellow; 
+  border: 2px solid goldenrod; 
+  border-style: double;
+  border-radius:5%;
+  margin-left:180px;
+  margin-right:180px;
+}
+.style img{
+  border-radius:5%;
+}
+body{
+  background-color:black;
+}
+footer{
+  color:lightgoldenrodyellow;
+}
+.descript{
   background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQla-54-kEmOayBzx0PPiTWBbvaNz9Ir14h1WZ_0iazDGHTOZv0");
   background-repeat: no-repeat;
   background-size:cover;
   background-origin: content-box;
   color:lightgoldenrodyellow;
-  border: 2px solid goldenrod;
+  border: 2px solid goldenrod; 
   border-style: double;
   border-radius:5%;
-  float:right;
+  margin-left:300px;
+  margin-right:300px;
 }
-body{
-  background-color:black;
+.descript img{
+  border-radius:5%;
 }

@@ -1,16 +1,15 @@
 {%extends 'all-health/base.html'%}
 
  {% block content %}
+<div class="descript">
 
  <div class="container">
     
    <div class="row" class="click">
-   <img src="{{ image.image_name.url}}" class="img-responsive img border-radius:15px;" alt="Image" width="500" height="500">
-   
-
-     <h2 class="text-center"> {{ image.name }} </h2><br>
-     <h3 class="text-center"> {{ image.description }} </h3><br>
-     <h2 class="text-center">link:{{ image.image_name}}</h2><br>
+      <h2 class="text-center"> {{ image.name }} </h2><br>
+      <center><img src="{{ image.image_name.url}}" class="img-responsive img border-radius:15px;" alt="Image" width="500" height="500"></center>
+      <h3 class="text-center"> {{ image.description }} </h3><br>
+     
 
      <!-- <br><input type="text" value="https://espegallery.herokuapp.com/media/gallery/yummy.jpg" id="myInput"><button onclick="myFunction()">Copy Link</button>
       -->
@@ -18,6 +17,7 @@
 
    </div>
   </div>
-
-
+ 
+</div>
+<center><h4><a href="http://www.eatingwell.com/" >Visite Site</a></h4></center>
 {% endblock %}
