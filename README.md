@@ -9,3 +9,15 @@ Diet / Everyday Health Diet Application
 ## Setup/Installation Requirements
   
   Browser and text editor.
+
+## Technologies Used
+  
+ . HTML Language 
+
+ . Django 1.11
+ 
+ . Python 3.6
+
+ . Bootstrap 
+  
+ . CSS Stylesheet
