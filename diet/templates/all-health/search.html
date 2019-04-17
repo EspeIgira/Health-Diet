@@ -1,0 +1,30 @@
+{%extends 'all-health/base.html'%} 
+{% block content %}
+<div class="container">
+
+  <div class="row">
+    {% if diets%}
+    <h2>Found {{ diets|length }} of searched term {{message}}</h2><br> 
+    {% else %}
+    <h2> Found 0 diets for the search term {{message}}</h2> 
+    {% endif %}
+
+  </div>
+
+  <div class="row">
+
+  {% if diets %}
+    {% for image in diets %}
+      <div class="col-sm-6 col-md-3 search text-center" >
+          <h1>{{image.name}}</h1>
+          
+          <img src="{{ image.image_name }}" class="img-responsive img" alt="Image" >
+          <br><br><br>
+      </div>
+    {% endfor %}
+  {% endif %}
+  </div>
+</div>
+{% endblock %}
+
+

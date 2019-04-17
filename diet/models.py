@@ -2,10 +2,10 @@ from django.db import models
 
 class Image(models.Model):
     name = models.CharField(max_length =30)
-    image_name = models.ImageField(upload_to='health/')
+    image_name = models.ImageField(upload_to='diets/')
     description = models.TextField()
-    comments = models.CharField(max_length =100)
     # category = models.ForeignKey(Category, null=True, blank=True)
+
 
     def __str__(self):
         return self.name
@@ -27,13 +27,32 @@ class Image(models.Model):
         ordering = ['name']
 
 
+    @classmethod
+    def search_by_category(cls,name):
+        category = Category.objects.filter(name__icontains=name).all()
+        images=None
+        for i in category:
+            print(i)
+            images=cls.objects.filter(category=i.id)
+        return images
+
+
+    @classmethod
+    def get_image(cls,id):
+        return Image.objects.get(id=id)
+
+
 class Category(models.Model):
     name = models.CharField(max_length =30)
 
     def __str__(self):
         return self.name
 
-
+    @classmethod
+    def search_by_category(cls,name):
+        category = cls.objects.filter(name__icontains=name).first()
+        images=Image.objects.filter(category=category)
+        return images
 
 
 class Comment(models.Model):
@@ -51,4 +70,5 @@ class Comment(models.Model):
         self.delete()
 
 
+   
    

@@ -1,3 +1,33 @@
 {%extends 'all-health/base.html'%}
-<h1>Everyday Health Diet</h1>
+<!-- <h1>Everyday Health Diet</h1> -->
+{% block content %} 
+{{ block.super}}
 
+<div class="container">
+
+  
+  {% for health_item in health %}
+
+  <div class="row">
+   
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      <h2 class="text-center"> {{ health_item.image_name}} </h2>
+    </div>
+
+    
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      <img src="{{health_item.image_name}}" class="img-responsive" alt="Image">
+    </div>
+
+  </div>
+
+
+  {% empty %}
+  <div class="row">
+    <h2 class="text-center">There No Image</h2>
+  </div>
+  {% endfor %}
+
+</div>
+
+{% endblock %}
