@@ -8,7 +8,7 @@ Diet / Everyday Health Diet Application
 
 ## Setup/Installation Requirements
   
-  Browser and text editor.
+Browser and text editor.
 
 ## Technologies Used
   
@@ -21,3 +21,7 @@ Diet / Everyday Health Diet Application
  . Bootstrap 
   
  . CSS Stylesheet
+
+ ## Contact information
+
+Telephone number (+250)788556167 or Email espeigira@gamil.com
