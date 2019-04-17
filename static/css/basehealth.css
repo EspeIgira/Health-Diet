@@ -39,6 +39,10 @@
 .style img{
   border-radius:5%;
 }
+.nav{
+  padding:20px;
+  padding-left:20px;
+}
 body{
   background-color:black;
 }

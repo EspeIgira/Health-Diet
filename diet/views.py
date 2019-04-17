@@ -21,6 +21,13 @@ def image(request,image_id):
         raise Http404()
     return render(request,"all-health/image.html", {"image":image})
 
+def vegetable(request):
+    try:
+        vegetable= Image.objects.all()
+    except DoesNotExist:
+        raise Http404()
+    return render(request,"vegetable.html", {"vegetable":vegetable})
+
 def search_results(request):
 
     if 'category' in request.GET and request.GET["category"]:

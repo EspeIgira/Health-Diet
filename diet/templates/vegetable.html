@@ -1,0 +1,37 @@
+{%extends 'all-health/base.html'%}
+
+ {% block content %}
+
+
+ <div class="container">
+    
+   <div class="row" class="click">
+      <h2 class="text-center"> {{ image.name }} </h2><br>
+      <nar><center><h4>
+            <a href="vegetable.html">Vegetables\</a>
+            <a href="news.asp">   Fruits\</a>
+            <a href="contact.asp">  Protein\</a>
+            <a href="about.asp">  Diary\</a>
+            <a href="http://www.eatingwell.com/" >  Visit Site</a></h4></center>
+           </nar></div>
+      <div class="title">
+            <h1 class='text-center' style='color:lightgoldenrodyellow'>Vegetables</h1>
+            <h1 class='text-center' style='color:lightgoldenrodyellow' >Diet</h1>
+            <h1 class='text-center ' style='padding-left:100px; color:lightgoldenrodyellow' >Instructions</h1> <br>
+          </div><br><br>
+      <center><img src="{{ image.image_name.url}}" width="200" height="200"></center><br>
+      <center><h4  style="color:lightgoldenrodyellow; ">Eat at least 3 servings of vegetables each day<br> Choose dark-green leafy vegetables, and cooked dry beans and peas often.</h4></center>
+    
+     
+
+     <!-- <br><input type="text" value="https://espegallery.herokuapp.com/media/gallery/yummy.jpg" id="myInput"><button onclick="myFunction()">Copy Link</button>
+      -->
+     
+
+   </div>
+  </div>
+ 
+
+<br>
+
+{% endblock %}
