@@ -1,3 +1,6 @@
 from django.test import TestCase
+from .models import Image,Category,Comment
 
-# Create your tests here.
+class ImageTestClass(TestCase):
+
+    
