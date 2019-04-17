@@ -28,6 +28,34 @@ def vegetable(request):
         raise Http404()
     return render(request,"vegetable.html", {"vegetable":vegetable})
 
+def fruit(request):
+    try:
+        fruit= Image.objects.all()
+    except DoesNotExist:
+        raise Http404()
+    return render(request,"vegetable.html", {"fruit":fruit})
+
+def protein(request):
+    try:
+        protein= Image.objects.all()
+    except DoesNotExist:
+        raise Http404()
+    return render(request,"vegetable.html", {"protein":protein})
+
+def cereal(request):
+    try:
+        vegetable= Image.objects.all()
+    except DoesNotExist:
+        raise Http404()
+    return render(request,"vegetable.html", {"cereal":cereal})
+
+def diary(request):
+    try:
+        diary= Image.objects.all()
+    except DoesNotExist:
+        raise Http404()
+    return render(request,"vegetable.html", {"diary":diary})
+
 def search_results(request):
 
     if 'category' in request.GET and request.GET["category"]:

@@ -11,9 +11,10 @@
     <div class="nav">
     <nar><center><h4>
      <a href="{%url 'vegetable'%}">Vegetables\</a>
-     <a href="news.asp">   Fruits\</a>
-     <a href="contact.asp">  Protein\</a>
-     <a href="about.asp">  Diary\</a>
+     <a href="{%url 'fruit'%}">   Fruits\</a>
+     <a href="{%url 'protein'%}">  Protein\</a>
+     <a href="{%url 'cereal'%}">  Cereal\</a>
+     <a href="{%url 'diary'%}">  Diary\</a>
      <a href="http://www.eatingwell.com/" >  Visit Site</a></h4></center>
     </nar></div>
     
@@ -24,11 +25,10 @@
     <div class="row text">
     
     <div class="style">
-    <!-- <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 center"><br> -->
+      <center>
         <h2 class="text-center"> {{ image.name }}</h2><br>
-        <!-- <h3 class="text-center"> {{ image.description }} </h3><br> -->
         <a  href="image/{{image.id}}" href="image.html"><img class='text-center 'src="{{ image.image_name.url }}" class="img-responsive img" alt="Image" ><br></a><br>
-        
+      </center>
 
     </div>
    

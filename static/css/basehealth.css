@@ -12,8 +12,8 @@
   
 }
 .style{
-  /* background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQla-54-kEmOayBzx0PPiTWBbvaNz9Ir14h1WZ_0iazDGHTOZv0"); */
-  /* background-repeat: no-repeat; */
+  /* background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQla-54-kEmOayBzx0PPiTWBbvaNz9Ir14h1WZ_0iazDGHTOZv0");
+  background-repeat: no-repeat; */
   background-size:cover;
   background-origin: content-box; 
   color:lightgoldenrodyellow; 
@@ -46,9 +46,7 @@
 body{
   background-color:black;
 }
-footer{
-  color:lightgoldenrodyellow;
-}
+
 .descript{
   background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQla-54-kEmOayBzx0PPiTWBbvaNz9Ir14h1WZ_0iazDGHTOZv0");
   background-repeat: no-repeat;
@@ -63,4 +61,16 @@ footer{
 }
 .descript img{
   border-radius:5%;
+}
+.click{
+  background-color:black;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-origin: content-box;
+  color:lightgoldenrodyellow; 
+  border: 2px solid goldenrod; 
+  border-style: double;
+  border-radius:5%;
+  margin-left:70px;
+  margin-right:70px;
 }
