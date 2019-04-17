@@ -1,0 +1,17 @@
+.title{
+  color: black;
+  border-style: double;
+  border-radius:15%;;
+  border: 2px solid goldenrod;
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQla-54-kEmOayBzx0PPiTWBbvaNz9Ir14h1WZ_0iazDGHTOZv0");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-origin: content-box;
+  margin-left:800px;
+  margin-right:800px;
+  
+}
+.title h2{
+  
+ 
+}

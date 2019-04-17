@@ -1,6 +1,5 @@
 {% load bootstrap3 %}
 {% load static%}
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,21 +12,25 @@
   {% endif %}
 
   {% block styles %}
-  {% bootstrap_css %}
-  <link rel="stylesheet" href="{% static 'css/basehealth.css' %}">
+    {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'css/basehealth.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   {% endblock %}
 
 </head>
 <body>
     {% include "navbar.html" %}
-    
-    {% block content %} <h1 class='text-center'>Diet</h1> {%endblock%}
+    {% block content %} 
+    <div class="title">
+      <h1 class='text-center' style='color:lightgoldenrodyellow'>EVERYDAY</h1>
+      <h1 class='text-center' style='color:lightgoldenrodyellow' >HEALTHY</h1>
+      <h1 class='text-center ' style='padding-left:100px; color:lightgoldenrodyellow' >DIET</h1> 
+    </div>
+    {%endblock%}
 
     {% block scripts %}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    {% bootstrap_javascript %}
+     {% bootstrap_javascript %}
     {% endblock %}
-    
 </body>
 </html>
-
