@@ -5,7 +5,7 @@
  <div class="container">
     
    <div class="row" class="click">
-   <img src="{{ image.image_name }}" class="img-responsive img border-radius:15px;" alt="Image" width="500" height="500">
+   <img src="{{ image.image_name.url}}" class="img-responsive img border-radius:15px;" alt="Image" width="500" height="500">
    
 
      <h2 class="text-center"> {{ image.name }} </h2><br>
@@ -18,3 +18,6 @@
 
    </div>
   </div>
+
+
+{% endblock %}

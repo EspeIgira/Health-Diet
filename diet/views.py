@@ -5,13 +5,13 @@ from .models import Image,Category,Comment
 
 
 def diet(request):
-    return render(request, 'index.html')
+    diets = Image.objects.filter() 
+    return render(request, 'index.html',{"diets":diets})
 
 def health_of_day(request):
 
     diets = Image.todays_diet () 
-    return render(request, 'index.html' ,{"diets":diets})
-
+    return render(request, 'all-health/today-health.html',{"diets":diets})
 
 
 def image(request,image_id):
