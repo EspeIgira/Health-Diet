@@ -1,7 +1,7 @@
 {%extends 'all-health/base.html'%}
 
  {% block content %}
-
+ <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
 <div style="font-size:25px; font-family: goldenrod serif;" class="container">
     <div style="font-size:25px; font-family: goldenrod serif;" class="title">
         <h1 class='text-center' style='color:lightgoldenrodyellow'>Diary</h1>
@@ -9,11 +9,11 @@
         <h1 class='text-center ' style='padding-left:100px; color:lightgoldenrodyellow' >Instructions</h1> <br>
     </div><br>
     <nar><center><h4>
-            <a href="vegetable.html">Vegetables\</a>
-            <a href="fruit.html">   Fruits\</a>
-            <a href="protein.html">  Protein\</a>
-            <a href="cereal.html">  cereal\</a>
-            <a href="diary.html">  Diary\</a>
+            <a href="{%url 'vegetable'%}">Vegetables\</a>
+            <a href="{%url 'fruit'%}">   Fruits\</a>
+            <a href="{%url 'protein'%}">  Protein\</a>
+            <a href="{%url 'cereal'%}">  Cereal\</a>
+            <a href="{%url 'diary'%}">  Diary\</a>
             <a href="https://www.medicinenet.com/script/main/art.asp?articlekey=213072" >  Visit Site</a></h4></center>
         </nar><br>
     <div class="click">
